@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %} {% endblock %}</title>
+  </head>
+  <body>
+    <nav>
+        <a href="{{ url_for('index')}}">URLShortener</a>
+        <button type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span=>
+        </button>
+        <div>
+            <ul>
+            <li>
+                <a href="#">About</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        {% for message in get_flashed_messages() %}
+            <div>{{ message }}</div>
+        {% endfor %}
+        {% block content %} {% endblock %}
+    </div>
+  </body>
+</html>
