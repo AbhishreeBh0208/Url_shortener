@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Xyz | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body class="relative overflow-x-hidden">
+        <nav class="w-screen fixed py-6 px-16 flex justify-between items-center lg:absolute z-50">
+          <a href="#" class="text-6xl font-semibold tracking-wide">Xyz</a>
+          <ul class="hidden lg:flex lg:text-2xl lg:content-center lg:tracking-wide">
+            <li><a href="#" class="mr-14 text-black hover:text-blue-500 transition-all duration-300">About</a></li>
+            <li><a href="#" class="mr-14 text-black hover:text-blue-500 transition-all duration-300">Pricing</a></li>
+            <li><a href="#" class="mr-14 text-black hover:text-blue-500 transition-all duration-300">Log In</a></li>
+            <li><a href="#" class="rounded-full text-white bg-gray-400 py-3 px-8 mr-10 shadow-sm hover:bg-gray-500 hover:shadow-md transition-all duration-300">Sign Up</a></li>
+          </ul>
+          <div class="toggleNav lg:hidden"></div>
+        </nav>
+
+        <div class="navbar-responsive flex flex-col h-screen w-screen justify-center items-center fixed bg-white top-0 transform scale-x-0 origin-left transition-all duration-300 py-8 px-12 z-10 lg:hidden">
+            <a href="#" class="text-6xl text-gray-700 font-semibold mb-28 uppercase transition-all duration-300">About</a>
+            <a href="#" class="text-6xl text-gray-700 font-semibold mb-28 uppercase">Pricing</a>
+            <a href="#" class="text-6xl text-gray-700 font-semibold mb-28 uppercase">Log In</a>
+            <a href="#" class="text-6xl text-gray-700 font-semibold uppercase">Sign Up</a>
+        </div>
+
+        <main class="hero h-full p-20 text-center lg:text-left lg:p-0 lg:h-screen lg:flex lg:items-center lg:relative mb-20">
+            <div class="mt-48 lg:w-1/3 lg:ml-24 lg:mt-0">
+                <h3 class="text-7xl font-semibold leading-tight mb-10">The best solution for short URL's</h3>
+                <p class="text-2xl text-gray-400 leading-relaxed mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati cumque, sed minima mollitia illo corporis ipsam pariatur necessitatibus numquam et deserunt sequi cum beatae eaque nesciunt dolor quas possimus.</p>
+                <a href="#Search" class="text-3xl text-white rounded-full bg-gray-400 py-4 px-10 mr-10 shadow-sm hover:bg-gray-500 hover:shadow-md transition-all duration-300">Get Started</a>
+            </div>
+            <div class="hidden lg:block h-5/6 w-4/5 absolute bottom-0 right-0">
+                <img src="img/hero.png" alt="hero image" class="w-full h-full">
+            </div>
+        </main>
+
+        <div class="features mb-36">
+            <h3 class="text-7xl font-semibold leading-tight mb-20 text-center">Why choose Xyz?</h3>
+            <div class="features-grid grid grid-cols-1 w-1/2 mx-auto auto-rows-auto  lg:w-3/5 lg:grid-cols-2 lg:gap-x-48 lg:gap-y-24">
+                <div class="feature-1 flex flex-col justify-center items-center p-4">
+                    <img src="img/feature 1.png" alt="feature 1 image" class="h-96 mb-16">
+                    <p class="text-2xl text-gray-500 leading-relaxed text-center mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nihil rem. Fugiat commodi iusto velit expedita dolorum, unde nesciunt laudantium minima numquam.</p>
+                </div>
+    
+                <div class="feature-2 flex flex-col justify-center items-center p-4">
+                    <img src="img/feature 2.png" alt="feature 2 image" class="h-96 mb-16">
+                    <p class="text-2xl text-gray-500 leading-relaxed text-center mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nihil rem. Fugiat commodi iusto velit expedita dolorum, unde nesciunt laudantium minima numquam.</p>
+                </div>
+
+                <div class="feature-3 flex flex-col justify-center items-center p-4">
+                    <img src="img/feature 3.png" alt="feature 3 image" class="h-96 mb-16">
+                    <p class="text-2xl text-gray-500 leading-relaxed text-center mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nihil rem. Fugiat commodi iusto velit expedita dolorum, unde nesciunt laudantium minima numquam.</p>
+                </div>
+
+                <div class="feature-4 flex flex-col justify-center items-center p-4">
+                    <img src="img/feature 4.png" alt="feature 4 image" class="h-96 mb-16">
+                    <p class="text-2xl text-gray-500 leading-relaxed text-center mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nihil rem. Fugiat commodi iusto velit expedita dolorum, unde nesciunt laudantium minima numquam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="search mb-20" id="Search">
+            <h3 class="text-7xl font-semibold leading-tight mb-20 text-center">Get started</h3>
+            <div class="search-area w-4/5 mx-auto flex justify-between items-center">
+                <input type="text" placeholder="Enter your URL" required class="w-3/4 border-2 border-gray-500 py-8 px-16 text-3xl outline-none rounded-full mx-auto hover:border-black focus:border-black valid:border-black transition-all duration-300">
+                <button class="text-3xl rounded-full text-white bg-gray-400 py-6 px-16 mr-10 shadow-sm hover:bg-gray-500 hover:shadow-md transition-all duration-300">Go</button>
+            </div>
+        </div>
+
+        <footer class="footer bg-gray-400 py-8 px-12 flex justify-between items-center">
+            <div class="footer__logo text-white text-4xl font-semibold">
+                <p class="">Xyz</p>
+            </div>
+            <div class="footer__nav">
+                <a href="#" class="footer__link text-2xl text-white mr-12">About</a>
+                <a href="#" class="footer__link text-2xl text-white mr-12">Pricing</a>
+                <a href="#" class="footer__link text-2xl text-white mr-12">Log In</a>
+                <a href="#" class="footer__link text-2xl text-white">Sign Up</a>
+            </div>
+        </footer>
+        <script src="js/app.js"></script>
+    </body>
+</html>

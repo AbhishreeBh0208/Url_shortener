@@ -1,0 +1,104 @@
+/* Variables */
+:root {
+    --color-primary: #ABC7FE;
+    --color-primary-dark: #3483EF;
+
+    --color-white: #fff;
+
+    --color-black: #000;
+    --color-grey-light: #9196A1;
+}
+
+/* Global reset */
+html {
+    font-size: 62.5%    !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+
+    @media only screen and (min-width: 87.5em) {
+        html {
+            font-size: 75% !important;
+        }
+    }
+
+    @media only screen and (max-width: 75em) {
+        html {
+            font-size: 50% !important;
+        }
+    }
+
+    @media only screen and (max-width: 56.25em) {
+        html {
+            font-size: 37.5% !important;
+        }
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        html {
+            font-size: 30% !important;
+        }
+    }
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+button {
+    border: none  !important;
+    outline: none !important;
+}
+
+.toggleNav {
+    width: 5rem;
+    height: 2px;
+    background-color: var(--color-black);
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.toggleNav::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-black);
+        top: -5px;
+        left: 0;
+        transform: rotate(0deg);
+        transition: all .3s ease-in-out;
+    }
+
+.toggleNav::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-black);
+        bottom: -5px;
+        left: 0;
+        transform: rotate(0deg);
+        transition: all .3s ease-in-out;
+}
+
+.open {
+    transform: scaleX(1)    !important;
+}
+
+.close {
+    background-color: var(--color-white);
+}
+
+.close::before {
+    transform: rotate(135deg);
+    top: 0;
+}
+
+.close::after {
+    transform: rotate(-135deg);
+    bottom: 0;
+}
